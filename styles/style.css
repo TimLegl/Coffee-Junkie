@@ -11,11 +11,6 @@
   line-height: 1.6rem;
 }
 
-/* TEST */
-html {
-  background-color: red;
-}
-
 body {
   max-width: 1440px;
   margin: 0 auto;
