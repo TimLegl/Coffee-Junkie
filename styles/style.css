@@ -180,6 +180,10 @@ article {
   height: 300px;
 }
 
+img#americano-image {
+  object-position: 100% 100%;
+}
+
 img#mocca-image {
   object-position: 0 100%;
 }
