@@ -1,0 +1,15 @@
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+svg {
+  padding-right: 0.5rem;
+}
+
+@media(max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

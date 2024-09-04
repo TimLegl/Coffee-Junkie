@@ -1,0 +1,81 @@
+#about img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+label {
+  text-align: start;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+input {
+  text-align: start;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  border: 1px solid rgb(104, 71, 55);
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid rgb(104, 71, 55);
+  border-radius: 2rem;
+  padding: 3rem 2rem;
+  box-shadow: 4px 4px;
+}
+
+textarea {
+  text-align: start;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  min-height: 6rem;
+  border-radius: 2rem;
+  border: 1px solid;
+  margin-bottom: 1rem;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+button {
+  padding: 0.5rem;
+  border: 1px solid rgb(104, 71, 55);
+  border-radius: 2rem;
+  box-shadow: 4px 4px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0;
+}
+
+/* INFOBOX NACH ABSENDEN */
+.success-box {
+  width: 100%;
+  color: green;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 1px solid green;
+  background-color: white;
+  margin-top: 1rem;
+  background-color: rgba(20, 176, 46, 0.25);
+}
+
+.error-box {
+  width: 100%;
+  color: red;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 1px solid red;
+  background-color: white;
+  margin-top: 1rem;
+  background-color: rgba(196, 27, 21, 0.25);
+}
+
+.error-text::placeholder {
+  color: red;
+}

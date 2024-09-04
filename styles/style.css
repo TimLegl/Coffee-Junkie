@@ -1,0 +1,395 @@
+/* DESKTOP 1440px aufwärts */
+/* Generelles Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  color: rgb(104,71,55);
+  line-height: 1.6rem;
+}
+
+@font-face {
+  font-family: Yesteryear;
+  src: url(../fonts/Yesteryear/Yesteryear-Regular.ttf);
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #f7f0e7;
+}
+
+section {
+  padding: 2rem;
+}
+
+a {
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+/* h1 {
+  font-size: 3rem;
+} */
+
+h2 {
+  font-size: 2.4rem;
+  padding: 0 0 1rem 0;
+}
+
+h3 {
+  font-size: 1.68rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h2, h3 {
+  line-height: 4rem;
+}
+
+p {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  /* Wichtig, damit Bilder nicht als inline-Element gelten. Fügt ungewollte Abstände hinzu */
+  display: block; 
+  object-fit: cover;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  left: 0;
+  position: fixed;
+  /* background-color: rgb(158,114,93);
+  background-color: rgb(72,48,39); */
+  /* background-color: rgb(104,71,55); */
+  /* background-color: #e8dbcb; */
+  /* #fbf8f2 */
+  /* background-color: #f7f0e7; */
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  z-index: 2; /* Wichtig, rutscht sonst unter 1. Bild */
+}
+
+nav img {
+  width: 5rem;
+  height: 5rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.first-heading {
+  font-family: Yesteryear;
+  font-size: 4rem;
+}
+
+.menu-container {
+  display: none;
+}
+
+#hamburger-menu-container {
+  top: -400px;
+  transition: top 0.5s ease-in-out;
+  width: 100%;
+  height: auto;
+  background-color: #f7f0e7;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Höhe der Navbar, damit Bild ganz sichtbar ("top" statt "padding-top "funktioniert nicht) */
+#content-container {
+  padding-top: 100px;
+  position: relative;
+}
+
+/* HEROIMAGE */
+#intro {
+  padding: 0;
+}
+
+/* Wrapper nötig um Text an richtiger Position zu halten */
+#intro-content {
+  position: relative;
+}
+
+#intro img {
+  /* Muss bei img stehen, da sonst alle Elemente darunter verschieben */
+  height: 420px;
+}
+
+#intro-heading {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  color: #f7f0e7;
+  padding: 0 1rem;
+  font-family: Yesteryear;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+#shops img {
+  padding-bottom: 1rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#shops a {
+  font-weight: bold;
+}
+
+article {
+  border: 1px solid rgb(104, 71, 55);
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: 4px 4px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+#products h2, h3 {
+  padding-bottom: 1rem;
+}
+
+#products a {
+  font-weight: bold;
+}
+
+.article-image {
+  border-radius: 2rem;
+  padding-bottom: 1rem;
+  height: 300px;
+}
+
+
+.shopping-cart-icon {
+  overflow: visible; /* WICHTIG SONST WERDEN BEI RUNDUNGEN OFT ECKEN ABGESCHNITTEN*/
+  width: 3rem;
+  height: auto;
+}
+
+img#americano-image {
+  object-position: 100% 100%;
+}
+
+img#mocca-image {
+  object-position: 0 100%;
+}
+
+/* FOOTER */
+footer {
+  padding: 1rem 2rem;
+}
+
+#scroll-to-top-text {
+  padding: 0;
+}
+
+#scroll-to-top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 20px;
+}
+
+.legal {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.legal a {
+  font-size: 1rem;
+}
+
+#copyright {
+  padding: 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Tablets und darunter */
+@media(max-width: 768px){
+  .grid {
+    grid-template-columns: 1fr;
+  }  
+
+  nav ul {
+    display: none;
+  }
+
+  .menu-container {
+    display: block;
+    /* Für Positionierung der menu-icons */
+    position: relative;
+  }
+
+  .menu-icon {
+    position: absolute;
+    right: 0;
+  }
+
+  #menu-open {
+    width: 3rem;
+    height: 2rem;
+    top: -1rem;
+  }
+
+  #menu-close {
+    width: 3rem;
+    height: 3rem;
+    top: -1.5rem;
+
+  }
+
+  /* Transition vor ausblenden */
+  .ausblenden-uebergang {
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+    opacity: 0;
+  }
+
+  .einblenden-uebergang {
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+    opacity: 1;
+  }
+  .ausblenden {
+    opacity: 0;
+    /* Macht Icon nicht klickbar - wichtig */
+    pointer-events: none;
+  }
+
+  #hamburger-menu-container {
+    top: -300px;
+    transition: top 0.5s ease-in-out;
+    width: 100%;
+    height: auto;
+    /* background-color: #f7f0e7; */
+    background-color: rgba(255,255,255,0.8);
+    position: fixed; /* Wichtig damit unter nav */
+    z-index: 1;
+  }
+
+  #hamburger-menu-container.einblenden {
+    top: 100px;
+  }
+
+  #hamburger-menu-links li {
+    padding: 1rem;
+  }
+
+
+}
+
+@media(max-width: 480px){
+  * {
+    line-height: 1.2rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  h3 {
+    font-size: 1.26rem;
+  }
+  
+  a {
+    text-decoration: underline;
+    font-size: 1.125rem;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+  }
+
+  nav {
+    padding: 0 1rem;
+    height: 76px;
+  }
+
+  nav img {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+
+  #menu-open {
+    width: 2.25rem;
+    height: 1.5rem;
+  }
+
+  #menu-close {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  #hamburger-menu-container.einblenden {
+    top: 75px;
+  }
+
+  #content-container {
+    padding-top: 76px;
+  }
+
+  #intro-heading {
+    left: 0;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  .grid {
+    gap: 1rem;
+  }
+
+  article {
+    padding: 1rem;
+  }
+
+  .legal {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}  
