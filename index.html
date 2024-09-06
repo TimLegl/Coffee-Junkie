@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
   <link rel="manifest" href="./favicon/site.webmanifest">
-  
+
   <title>Coffee Junkie</title>
   <link rel="stylesheet" href="./styles/style.css">
 </head>
@@ -20,29 +20,29 @@
 
   <header>
     <nav>
-      <img src="./images/coffee-logo.png" alt="Coffee Beans" id="logo">
+      <a href="./index.html"><img src="./images/coffee-logo.png" alt="Coffee Beans Logo" id="logo"></a>
 
       <!-- AUSBLENDEN UNTER 768px -->
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">Über uns</a></li>
-        <li><a href="stores.html">Filialen</a></li>
-        <li><a href="contact.html">Kontakt</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./pages/about.html">Über uns</a></li>
+        <li><a href="./pages/stores.html">Filialen</a></li>
+        <li><a href="./pages/contact.html">Kontakt</a></li>
       </ul>
-      
+
 
       <!-- EINBLENDEN UNTER 768px -->
       <div class="menu-container">
-        <img id="menu-open" class="menu-icon" src="./icons/menu-open-2pt.svg" alt="">
-        <img id="menu-close" class="menu-icon ausblenden" src="./icons/menu-close-2pt.svg" alt="">
+        <img id="menu-open" class="menu-icon" src="./icons/menu-open.svg" alt="Menü öffnen Icon">
+        <img id="menu-close" class="menu-icon ausblenden" src="./icons/menu-close.svg" alt="Menü schließen Icon">
       </div>
     </nav>
     <div id="hamburger-menu-container">
       <ul id="hamburger-menu-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">Über uns</a></li>
-        <li><a href="stores.html">Filialen</a></li>
-        <li><a href="contact.html">Kontakt</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./pages/about.html">Über uns</a></li>
+        <li><a href="./pages/stores.html">Filialen</a></li>
+        <li><a href="./pages/contact.html">Kontakt</a></li>
       </ul>
     </div>
   </header>
@@ -51,84 +51,103 @@
 
     <section id="intro">
       <div id="intro-content">
-        <h1 id="intro-heading">Welcome To XXX Coffee!</h1>
-        <img src="./images/coffeebeans.jpg" alt="Coffee Beans">
+        <h1 id="intro-heading">Welcome To Coffee Junkie!</h1>
+        <img src="./images/coffee-beans-heroimage.jpg" alt="Kaffeebohnen Heroimage">
       </div>
     </section>
 
-    <section id="featured">
-      <h2>Featured Products</h2>
-      <img src="./images/coffee-shop.png" alt="Revolte Coffee">
+    <section id="shops">
+      <h2>Unsere Shops</h2>
+      <img src="./images/coffee-shop.png" alt="Kaffee Laden">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, tempore debitis sapiente aut accusamus minus
         quaerat libero ullam dicta dolor eligendi consequuntur dolorum laboriosam hic, nisi dolores recusandae dolore
         vel?
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis iusto porro, hic libero sapiente animi natus id
         laudantium suscipit et impedit ullam doloremque quibusdam eaque officia harum repellat alias soluta.
       </p>
-      <a href="https://wikipedia.org" target="_blank">Details</a>
+      <a href="./pages/stores.html">Besuchen Sie uns</a>
     </section>
 
-    <section id="products" class="grid">
-      <article>
-        <h2>French Roast</h2>
-        <img src="./images/frenchroast.png" alt="French Roast">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat ducimus qui porro, animi deleniti
-          autem
-          labore ipsam quae esse quia ab sapiente culpa beatae dignissimos debitis minima non quo? Facilis, ducimus.</p>
-        <a href="https://wikipedia.org" target="_blank">Details</a>
-      </article>
+    <section id="products">
+      <h2>Produkte</h2>
+      <div class="grid">
 
-      <article>
-        <h2>Columbian Roast</h2>
-        <img src="./images/columbianroast.webp" alt="Columbian Roast">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, tempore debitis sapiente aut accusamus
-          minus
-          quaerat libero ullam dicta dolor eligendi consequuntur dolorum laboriosam hic, nisi dolores recusandae dolore
-          vel?
-        </p>
-        <a href="https://wikipedia.org" target="_blank">Details</a>
-      </article>
 
-      <article>
-        <h2>Americano Coffee</h2>
-        <img id="americano-image" src="./images/coffee-americano.jpg" alt="Americano Coffee">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, tempore debitis sapiente aut accusamus
-          minus
-          quaerat libero ullam dicta dolor eligendi consequuntur dolorum laboriosam hic, nisi dolores recusandae dolore.
-        </p>
-        <a href="https://wikipedia.org" target="_blank">Details</a>
-      </article>
+        <article>
+          <h2>French Roast</h2>
+          <img class="article-image" src="./images/frenchroast.png" alt="French Roast">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat ducimus qui porro, animi deleniti
+            autem
+            labore ipsam quae esse quia ab sapiente culpa beatae dignissimos debitis minima non quo? Facilis, ducimus.
+          </p>
+          <a href="https://de.wikipedia.org/wiki/French_Roast" target="_blank">Mehr erfahren</a>
+        </article>
 
-      <article>
-        <h2>Indonesian Roast</h2>
-        <img src="./images/indonesian-coffee.jpg" alt="Indonesian Coffee">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, tempore debitis sapiente aut accusamus
-          minus
-          quaerat libero ullam dicta dolor eligendi consequuntur dolorum laboriosam hic, nisi dolores recusandae dolore
-          vel?
-        </p>
-        <a href="https://wikipedia.org" target="_blank">Details</a>
-      </article>
+        <article>
+          <h2>Columbian Roast</h2>
+          <img class="article-image" src="./images/columbianroast.webp" alt="Columbian Roast">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, tempore debitis sapiente aut accusamus
+            minus
+            quaerat libero ullam dicta dolor eligendi consequuntur dolorum laboriosam hic, nisi dolores recusandae
+            dolore
+            vel?
+          </p>
+          <a href="https://de.wikipedia.org/wiki/Kaffeeanbauregion_Kolumbiens" target="_blank">Mehr erfahren</a>
+        </article>
 
-      <article>
-        <h2>Mocca Coffee</h2>
-        <img id="mocca-image" src="./images/turkish-coffee.jpg" alt="Mocca Coffee">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, tempore debitis sapiente aut accusamus
-          minus
-          quaerat libero ullam dicta dolor eligendi consequuntur dolorum laboriosam hic, nisi dolores recusandae dolore
-          vel?
-        </p>
-        <a href="https://wikipedia.org" target="_blank">Details</a>
-      </article>
+        <article>
+          <h2>Café Americano</h2>
+          <img class="article-image" id="americano-image" src="./images/coffee-americano.jpg" alt="Café Americano">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, tempore debitis sapiente aut accusamus
+            minus
+            quaerat libero ullam dicta dolor eligendi consequuntur dolorum laboriosam hic, nisi dolores recusandae
+            dolore.
+          </p>
+          <a href="https://de.wikipedia.org/wiki/Liste_von_Kaffeespezialit%C3%A4ten#Nordamerika_(USA,_Kanada,_Mexiko)"
+            target="_blank">Mehr erfahren</a>
+        </article>
 
+        <article>
+          <h2>Grüner Kaffee</h2>
+          <img class="article-image" src="./images/green-coffee.jpg" alt="Grüner Kaffee">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, tempore debitis sapiente aut accusamus
+            minus
+            quaerat libero ullam dicta dolor eligendi consequuntur dolorum laboriosam hic, nisi dolores recusandae
+            dolore
+            vel?
+          </p>
+          <a href="https://de.wikipedia.org/wiki/Gr%C3%BCner_Kaffee" target="_blank">Mehr erfahren</a>
+        </article>
+
+        <article>
+          <h2>Mokka</h2>
+          <img class="article-image" id="mocca-image" src="./images/turkish-coffee.jpg" alt="Mokka">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, tempore debitis sapiente aut accusamus
+            minus
+            quaerat libero ullam dicta dolor eligendi consequuntur dolorum laboriosam hic, nisi dolores recusandae
+            dolore
+            vel?
+          </p>
+          <a href="https://de.wikipedia.org/wiki/Mokka_(Kaffee)" target="_blank">Mehr erfahren</a>
+        </article>
+
+      </div>
     </section>
 
     <footer>
-        <a id="scroll-to-top-container" href="">
-          <i class="fa-solid fa-arrow-up fa-2xl"></i>
-            <p id="scroll-to-top-text">Hier geht's zurück nach oben</p>
-          <i class="fa-solid fa-arrow-up fa-2xl"></i>
-        </a>
+      <a id="scroll-to-top-container" href="">
+        <i class="fa-solid fa-arrow-up fa-2xl"></i>
+        <p id="scroll-to-top-text">Hier geht's zurück nach oben</p>
+        <i class="fa-solid fa-arrow-up fa-2xl"></i>
+      </a>
+
+      <div class="legal">
+        <a href="./pages/imprint.html">Impressum</a>
+        <a href="./pages/contact.html">Kontakt</a>
+        <a href="./pages/dataprotection.html">Datenschutzerklärung</a>
+        <a href="./pages/cookies.html">Cookies</a>
+      </div>
+
       <p id="copyright">Copyright&copy;2024</p>
     </footer>
 
