@@ -242,12 +242,9 @@ footer {
 /* Tablets und darunter */
 @media(max-width: 768px){
 
-  h2, h3 {
-    line-height: 3rem;
-  }
-
   .first-heading {
     padding: 1rem 0;
+    line-height: 4rem;
   }
 
   .grid {
