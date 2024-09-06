@@ -246,6 +246,10 @@ footer {
     line-height: 3rem;
   }
 
+  .first-heading {
+    padding: 1rem 0;
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }  
