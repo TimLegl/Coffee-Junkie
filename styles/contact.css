@@ -79,3 +79,19 @@ button:hover {
 .error-text::placeholder {
   color: red;
 }
+
+/* MOBILE */
+@media(max-width: 480px){
+  label {
+    padding: 0.5rem 1.125rem;
+    font-size: 1.125rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  textarea {
+    font-size: 0.9rem;
+  }
+}
