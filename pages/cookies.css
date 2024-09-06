@@ -1,9 +1,0 @@
-#scroll-to-top-container {
-  display: none;
-}
-
-@media(max-width: 1024px) {
-  #scroll-to-top-container {
-    display: flex;
-  }
-}
