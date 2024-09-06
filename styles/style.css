@@ -241,6 +241,11 @@ footer {
 
 /* Tablets und darunter */
 @media(max-width: 768px){
+
+  h2, h3 {
+    line-height: 3rem;
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }  
