@@ -1,0 +1,15 @@
+#dataprotection h1 {
+  padding-bottom: 2rem;
+  text-decoration: underline;
+}
+
+#dataprotection ul {
+  list-style-type: disc;
+  padding: 0 2rem 1rem;
+  padding-bottom: 1rem;
+}
+
+#dataprotection ul li {
+  text-align: left;
+}
+
