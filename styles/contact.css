@@ -48,6 +48,10 @@ button {
   transition: box-shadow 0.3s ease-in-out;
 }
 
+button a {
+  text-decoration: none;
+}
+
 button:hover {
   transition: box-shadow 0.3s ease-in-out;
   box-shadow: 0 0;
