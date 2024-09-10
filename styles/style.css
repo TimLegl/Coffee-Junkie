@@ -36,12 +36,14 @@ a {
 } */
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 4rem;
   padding: 0 0 1rem 0;
+  font-family: Yesteryear;
 }
 
 h3 {
-  font-size: 1.68rem;
+  font-size: 2.4rem;
+  font-family: Yesteryear;
 }
 
 h4 {
@@ -100,12 +102,6 @@ nav ul {
 
 nav a {
   text-decoration: none;
-}
-
-.first-heading {
-  padding: 1rem 0;
-  font-family: Yesteryear;
-  font-size: 4rem;
 }
 
 .menu-container {
@@ -331,15 +327,15 @@ footer {
   }
 
   h2, h3 {
-    line-height: 2rem;
+    line-height: 3rem;
   }
   
   h2 {
-    font-size: 1.8rem;
+    font-size: 3rem;
   }
   
   h3 {
-    font-size: 1.26rem;
+    font-size: 1.8rem;
   }
   
   a {
